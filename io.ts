@@ -23,6 +23,7 @@ export async function readJson<T>(path: string): Promise<T> {
     // @ts-ignore: for NodeJS only
     json = require("fs").readFile(path);
   } else if (isBrowser()) {
+    // @ts-ignore: for Browser only
     return (await fetch(path)).json();
   } else {
     throw Error("Cannot determine environment.");
