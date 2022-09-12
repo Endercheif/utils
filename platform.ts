@@ -9,7 +9,7 @@ export function isNode(): IsNode {
   return "process" in globalThis && "global" in globalThis;
 }
 
-export function isDeno(): boolean {
+export function isDeno(): IsDeno {
   // @ts-ignore: works in Deno
   return "Deno" in globalThis;
 }
