@@ -7,5 +7,5 @@ export function isDeno(): boolean {
 }
 
 export function isBrowser(): boolean {
-  return !isNode && !isDeno;
+  return !isNode() && !isDeno();
 }
