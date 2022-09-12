@@ -13,7 +13,7 @@ await build({
     license: "MIT",
     repository: {
       type: "git",
-      url: "git+https://github.come/endercheif/utils",
+      url: "git+https://github.com/endercheif/utils",
     },
   },
 });
